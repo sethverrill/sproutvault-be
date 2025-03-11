@@ -68,3 +68,5 @@ group :test do
   gem "vcr"
   gem "webmock"
 end
+
+gem "dotenv-rails", "~> 3.1"
