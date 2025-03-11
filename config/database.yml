@@ -2,8 +2,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
-  url: <%= ENV['SUPABASE_DATABASE_URL'] %>
-
+  url: <%= ENV["SUPABASE_DATABASE_URL"] %>
 
 development:
   <<: *default
@@ -19,7 +18,7 @@ production:
     database: sproutvault_be_production
     username: sproutvault_be
     password: <%= ENV["SPROUTVAULT_BE_DATABASE_PASSWORD"] %>
-    url: <%= ENV['SUPABASE_DATABASE_URL'] %>
+    url: <%= ENV["SUPABASE_DATABASE_URL"] %>
   cache:
     <<: *primary_production
     database: sproutvault_be_production_cache
