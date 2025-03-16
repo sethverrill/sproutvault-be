@@ -4,7 +4,7 @@ class User < ApplicationRecord
   before_save :downcase_email
 
   has_many :children, dependent: :destroy
-  has_many :daycare_hours, through: :children
+  has_many :daycare_hours, through: :children, class_name: "DaycareHour"
   has_many :daycare_providers, through: :daycare_hours
 
   validates :first_name, :last_name, presence: true
