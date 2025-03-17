@@ -1,10 +1,10 @@
 FactoryBot.define do
   factory :daycare_hour do
-    daycare_provider
-    child
-    date { Faker::Date.backward(days: 60) }
-    start_time { Faker::Time.between(from: DateTime.now.beginning_of_day + 7.hours, to: DateTime.now.beginning_of_day + 9.hours) }
-    end_time { Faker::Time.between(from: DateTime.now.beginning_of_day + 13.hours, to: DateTime.now.beginning_of_day + 16.hours) }
-    duration { end_time - start_time }
+    association :daycare_provider
+    association :child
+    date { Faker::Date.backward(days: 30) }
+    start_time { "08:00" }
+    end_time { "15:30" }
+    duration { 5.5 }
   end
 end
