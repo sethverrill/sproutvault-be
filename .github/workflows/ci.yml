@@ -95,6 +95,8 @@ jobs:
         run: |
           bin/rails db:drop db:create db:migrate RAILS_ENV=test
 
+      - name: Check Database Schema
+        run: bin/rails db:migrate:status RAILS_ENV=test
 
       - name: Run tests
         env:
