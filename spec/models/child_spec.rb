@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'daycare_hour'
 
 RSpec.describe Child, type: :model do
   describe "associations" do

@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'daycare_hour'
 
 RSpec.describe User, type: :model do
   subject { create(:user) }

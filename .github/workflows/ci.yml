@@ -92,13 +92,18 @@ jobs:
         run: sleep 10
 
       - name: Create and Migrate Test Database
-        run: bin/rails db:setup RAILS_ENV=test
+        run: |
+          bin/rails db:drop db:create db:migrate RAILS_ENV=test
+
 
       - name: Run tests
-        run: bundle exec rspec
         env:
           RAILS_ENV: test
           DATABASE_URL: postgres://postgres:postgres@127.0.0.1:5432/sproutvault_be_test
+        run: |
+          echo "Environment: $RAILS_ENV"
+          bin/rails db:test:prepare
+          bundle exec rspec
 
       - name: Keep screenshots from failed system tests
         uses: actions/upload-artifact@v4
