@@ -1,9 +1,39 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+require 'faker'
+
+User.destroy_all
+Child.destroy_all
+DaycareProvider.destroy_all
+DaycareHour.destroy_all
+
+user = User.create!(
+  first_name: "Greg",
+  last_name: "Grant",
+  email: "greg@email.com",
+password_digest: BCrypt::Password.create("easypass123")
+)
+
+3.times do
+  child = user.children.create!(
+    name: Faker::Name.first_name,
+    birthdate: Faker::Date.between(from: (4.years. + 6.months).ago, to: 6.months.ago)
+  )
+
+  provider = DaycareProvider.create!(
+    name: Faker::Company.name,
+    provider_type: %w[Daycare Nanny Family Friend].sample
+  )
+
+  5.times do
+    start_time = Faker::Time.between(from: DateTime.now.beginning_of_day + 7.hours, to: DateTime.now.beginning_of_day + 9.hours)
+    end_time = Faker::Time.between(from: start_time + 5.hours, to: start_time + 8.hours)
+
+    DaycareHour.create!(
+      child: child,
+      daycare_provider_id: provider.id,
+      date: Faker::Date.backward(days: 60),
+      start_time: start_time,
+      end_time: end_time,
+      duration: end_time- start_time
+    )
+  end
+end
