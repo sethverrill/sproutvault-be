@@ -98,6 +98,9 @@ jobs:
       - name: Check Database Schema
         run: bin/rails db:migrate:status RAILS_ENV=test
 
+      - name: Force Load All Models
+        run: bin/rails runner "Rails.application.eager_load!"
+
       - name: Run tests
         env:
           RAILS_ENV: test
@@ -105,6 +108,7 @@ jobs:
         run: |
           echo "Environment: $RAILS_ENV"
           bin/rails db:test:prepare
+          bin/rails runner "Rails.application.eager_load!"  # 🔹 Ensures models are preloaded
           bundle exec rspec
 
       - name: Keep screenshots from failed system tests
