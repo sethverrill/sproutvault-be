@@ -107,3 +107,6 @@ jobs:
           name: screenshots
           path: ${{ github.workspace }}/tmp/screenshots
           if-no-files-found: ignore
+
+      - name: Debug Database Schema
+        run: bundle exec rails runner "puts ActiveRecord::Base.connection.tables"
