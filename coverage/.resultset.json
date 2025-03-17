@@ -1,0 +1,454 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/config/environment.rb": {
+        "lines": [
+          null,
+          1,
+          null,
+          null,
+          1
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/config/application.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/config/boot.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/config/environments/test.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/config/initializers/assets.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/config/initializers/content_security_policy.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/config/initializers/filter_parameter_logging.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/config/initializers/inflections.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/spec/factories/children.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          4,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/spec/factories/daycare_hours.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/spec/factories/daycare_providers.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/spec/factories/users.rb": {
+        "lines": [
+          1,
+          1,
+          14,
+          14,
+          14,
+          14,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/app/helpers/api/v1/dashboard_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/spec/support/vcr_setup.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/spec/models/child_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/app/models/child.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/spec/models/daycare_hour_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/app/models/daycare_hour.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          8,
+          null,
+          3,
+          2,
+          null,
+          null,
+          null,
+          1,
+          8,
+          3,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/spec/models/daycare_provider_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/app/models/daycare_provider.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          11,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          23,
+          null,
+          1,
+          null,
+          1,
+          10,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1742237786
+  }
+}

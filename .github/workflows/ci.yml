@@ -98,9 +98,6 @@ jobs:
       - name: Check Database Schema
         run: bin/rails db:migrate:status RAILS_ENV=test
 
-      - name: Force Load All Models
-        run: bin/rails runner "Rails.application.eager_load!"
-
       - name: Run tests
         env:
           RAILS_ENV: test
@@ -118,6 +115,3 @@ jobs:
           name: screenshots
           path: ${{ github.workspace }}/tmp/screenshots
           if-no-files-found: ignore
-
-      - name: Debug Database Schema
-        run: bundle exec rails runner "puts ActiveRecord::Base.connection.tables"
