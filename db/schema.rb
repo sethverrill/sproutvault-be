@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_03_16_205904) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_14_162412) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -38,9 +38,11 @@ ActiveRecord::Schema[8.0].define(version: 2025_03_16_205904) do
 
   create_table "daycare_providers", force: :cascade do |t|
     t.string "name"
-    t.string "provider_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "provider_type", default: 0, null: false
+    t.string "other_description"
+    t.index ["provider_type"], name: "index_daycare_providers_on_provider_type"
   end
 
   create_table "users", force: :cascade do |t|
