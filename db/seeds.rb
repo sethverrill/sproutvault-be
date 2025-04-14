@@ -20,7 +20,7 @@ password_digest: BCrypt::Password.create("easypass123")
 
   provider = DaycareProvider.create!(
     name: Faker::Company.name,
-    provider_type: %w[Daycare Nanny Family Friend].sample
+    provider_type: %i[daycare nanny family parent other].sample
   )
 
   5.times do
