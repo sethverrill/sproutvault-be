@@ -15,12 +15,12 @@ password_digest: BCrypt::Password.create("easypass123")
 3.times do
   child = user.children.create!(
     name: Faker::Name.first_name,
-    birthdate: Faker::Date.between(from: (4.years. + 6.months).ago, to: 6.months.ago)
+    birthdate: Faker::Date.between(from: (4.years + 6.months).ago, to: 6.months.ago)
   )
 
   provider = DaycareProvider.create!(
     name: Faker::Company.name,
-    provider_type: %i[daycare nanny family parent other].sample
+    provider_type: rand(0..4)
   )
 
   5.times do

@@ -320,7 +320,6 @@
           null,
           null,
           null,
-          null,
           1,
           1,
           1,
@@ -385,12 +384,32 @@
           2,
           2,
           null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
       "/Users/sethverrill/turing_work/mod4/stretch_tech/sproutvault-be/app/models/daycare_provider.rb": {
         "lines": [
           1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           1,
           1,
           null,
@@ -449,6 +468,6 @@
         ]
       }
     },
-    "timestamp": 1742237786
+    "timestamp": 1744658232
   }
 }
