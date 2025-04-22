@@ -12,4 +12,8 @@ class ApplicationController < ActionController::API
   rescue ActiveRecord::RecordNotFound, JWT::DecodeError
     render json: { error: "Unauthorized" }, status: :unauthorized
   end
+
+  def current_user
+    @current_user
+  end
 end
