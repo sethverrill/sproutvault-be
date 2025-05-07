@@ -12,7 +12,7 @@ class JsonWebToken
   end
 
   def self.encode(payload, exp = 24.hours.from_now)
-    payload[:exp] = epx.to_i
+    payload[:exp] = exp.to_i
     JWT.encode(payload, private_key, ALGORITHM)
   end
 
@@ -20,6 +20,6 @@ class JsonWebToken
     decoded = JWT.decode(token, public_key, true, algorithm: ALGORITHM)
     HashWithIndifferentAccess.new(decoded[0])
   rescue JWT::DecodeError
-    nil
+    {}
   end
 end
