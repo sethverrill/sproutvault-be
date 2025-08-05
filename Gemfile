@@ -74,4 +74,4 @@ end
 
 gem "dotenv-rails", "~> 3.1"
 
-gem "rubocop", "~> 1.75", :groups => [:development, :test]
+gem "rubocop", "~> 1.79", :groups => [:development, :test]
